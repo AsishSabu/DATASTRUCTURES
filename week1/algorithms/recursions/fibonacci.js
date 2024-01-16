@@ -6,8 +6,5 @@ function recursiveFibonacci(n) {
 }
 
 
-console.log(recursiveFibonacci(1));
-console.log(recursiveFibonacci(2));
-console.log(recursiveFibonacci(3));
-console.log(recursiveFibonacci(4));
-console.log(recursiveFibonacci(5));
+
+console.log(recursiveFibonacci(0));
