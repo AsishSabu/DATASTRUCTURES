@@ -38,7 +38,7 @@ class linkedList {
     let current = this.head;
     let nextnode= null;
     while (current) {
-      let nextnode = current.next;
+       nextnode = current.next;
       current.next = previous;
       previous = current
       current=nextnode
