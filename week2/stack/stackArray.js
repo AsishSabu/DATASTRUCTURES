@@ -1,36 +1,40 @@
-class stack{
-    constructor() {
-        this.items=[]
+class stack {
+  constructor() {
+    this.items = [];
+  }
+  isempty() {
+    return this.items.length == 0;
+  }
+  push(item) {
+    this.items.push(item);
+  }
+  pop() {
+    if (this.isempty()) {
+      console.log("underflow");
+    } else {
+      this.items.pop();
     }
-    isEmpty() {
-        return this.items.length===0
-    }
-    push(element) {
-        this.items.push(element)
-    }
-    pop() {
-        if (this.isEmpty()) {
-            return "is empty";
-        }
-        return this.items.pop();
-    }
-    print() {
-       console.log(this.items.join(" "));
     }
     peek() {
-        if (this.isEmpty()) {
-            console.log("there is no items");
-        }
-        return this.items[this.items.length-1]
+     if (this.isempty()) {
+       console.log("underflow");
+     } else {
+      return this.items[this.items.length - 1];
+     }   
+    }
+    print() {
+        console.log(this.items);
+    }
+    clear() {
+        this.items=[]
     }
 }
-let newStack = new stack();
-newStack.push(1);
-newStack.push(2);
-newStack.push(3);
-newStack.push(4);
-newStack.push(5);
-newStack.pop();
-newStack.print();
-console.log("Top of the stack",newStack.peek());
 
+
+const newStack = new stack();
+newStack.push(10)
+newStack.push(20)
+newStack.push(30)
+newStack.push(40)
+console.log(newStack.peek())
+newStack.print()
