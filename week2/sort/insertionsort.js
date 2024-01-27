@@ -5,7 +5,7 @@ function insertionSort(arr) {
         while (j >= 0 && arr[j] > NTI) {
             arr[j + 1] = arr[j];
             j=j-1
-        }
+        } 
         arr[j+1]=NTI
     }
 }
