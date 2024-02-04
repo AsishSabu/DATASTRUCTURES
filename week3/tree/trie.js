@@ -42,16 +42,16 @@ class Trie {
     return node.endOfWord;
     }
     
-//   prefix(prefix) {
-//     let node = this.root;
-//     for (let char of prefix) {
-//       if (!node.children[char]) {
-//         return false;
-//       }
-//       node = node.children[char];
-//     }
-//     return true;
-    //   }
+  prefix(prefix) {
+    let node = this.root;
+    for (let char of prefix) {
+      if (!node.children[char]) {
+        return false;
+      }
+      node = node.children[char];
+    }
+    return true;
+      }
     
 
     remove(word) {
