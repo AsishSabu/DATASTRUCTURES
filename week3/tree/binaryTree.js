@@ -153,8 +153,8 @@ console.log(newBst.search(12));
 newBst.inorder(newBst.root);
 // console.log(newBst.isValid())
 // newBst.preorder(newBst.root);
-newBst.inorder(newBst.root);
-console.log("closest",newBst.closest(8));
+// newBst.inorder(newBst.root);
+// console.log("closest",newBst.closest(8));
 // newBst.postorder(newBst.root);
 // newBst.bfs()
 // console.log("minimum value ", newBst.min(newBst.root))
